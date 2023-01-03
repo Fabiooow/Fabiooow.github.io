@@ -5,10 +5,35 @@
 <!---- External css file index.css placed in the folder css is linked-->
 <link href="css/newcss.css" rel="stylesheet" type="text/css"/>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery/min.js"</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery/min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+<meta name="monetag" content="eb9624316eee812dd7ebb28bf22b0293">
 </head>
 <body>
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCe7ldm7VpRHx9TDdkEIaItlVtzQuUZRnc",
+    authDomain: "teste-9d811.firebaseapp.com",
+    databaseURL: "https://teste-9d811.firebaseio.com",
+    projectId: "teste-9d811",
+    storageBucket: "teste-9d811.appspot.com",
+    messagingSenderId: "13507103701",
+    appId: "1:13507103701:web:ce06aa4ba7f892f1",
+    measurementId: "G-2YNS9LEWG1"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
      <div class="navbar navbar-inverse navbar-fixed-top">
     
         
@@ -17,7 +42,7 @@
             <a href="#" style="
     color:transparent;
     color: #9d9d9d;"
- "><div class="logo">Lifestyle Store</div></a>
+ ><div class="logo">Lifestyle Store</div></a>
                 
                 <a href="pages/login.html"style="
     color:transparent;
